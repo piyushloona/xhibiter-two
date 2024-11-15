@@ -1,0 +1,375 @@
+:root {
+   
+    --white:white;
+    --background-color: #f4f5fa;
+    --header_bg:#9155fd;
+    --icon:#8358ff;
+    --black:rgb(0, 0, 0);
+    --blue:#0d102d;
+    --light_blue:#101436;
+    --light_bg:#e5f2fa;
+    --grey:grey;
+    --c_li:#010129;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+     
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(5px);
+    z-index: 1030;
+}
+.header{
+    background-color: var(--blue);
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+.header .navbar{
+    height: 110px;
+}
+.header .navbar .container-fluid .navbar-brand img{
+    width: 100%;
+    height: 100%;
+}
+.header .navbar .container-fluid .navbar-brand{
+    height: 30px;
+    padding: 2px;
+    margin-left: 81px;
+}
+
+.header .navbar .container-fluid .input_list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 810px;
+    padding: 19px;
+    margin-left: 58px;
+}
+.header .container-fluid .input_list ul li .menu_list {
+    display: none;
+    position: absolute;
+}
+
+.header .navbar .container-fluid .input_list ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 26px;
+     
+}
+.header .navbar .container-fluid .input_list ul li{
+    /* margin-top: 6px; */
+    height: 30px;
+    position: relative;     
+}
+.header .navbar .container-fluid .input_list ul li a{
+    justify-content: space-evenly;
+    display: flex;
+    color:var(--white);
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+}
+.header .navbar .container-fluid .input_list ul li a:hover {
+    color:var(--icon);
+    transition: all .3s linear;
+}
+.header .navbar .container-fluid .input_list .icon{
+    display: flex;
+    padding: 16px;
+    border-radius: 19px;
+    width: 263px;
+    height: 48px;
+    align-items: center;
+    background-color: hsla(0,0%,100%,.15);
+}
+.header .navbar .container-fluid .input_list .icon .search_icon{
+    color: var(--white);
+    height: 16px;
+}
+.header .navbar .container-fluid .input_list .icon .search{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 15px;
+}
+/* .header .navbar .container-fluid .input_list .search:focus .icon{
+    border: 2px solid green;
+} */
+
+
+.header .navbar .container-fluid .input_list .icon .search::placeholder{
+    color:var(--white);
+}
+
+
+.header .navbar .container-fluid .end{
+    width: 194px;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 12px;
+    
+}
+.header .navbar .container-fluid .end .hand_icon{
+    color: var(--white);
+    background-color: hsla(0,0%,100%,.15);
+    height: 36px;
+    width: 36px;
+    padding: 8px;
+    border-radius: 33px;
+    transition: all .3s linear;
+    cursor: pointer;
+    
+}
+.header .navbar .container-fluid .navbar-toggler{
+    background-color: white;
+}
+.header .navbar .container-fluid .end .hand_icon:hover{
+    background-color: var(--icon);
+}
+
+.header .navbar .container-fluid .end .profile_icon{
+    color: var(--white);
+    background-color: hsla(0,0%,100%,.15);
+    height: 36px;
+    width: 36px;
+    padding: 8px;
+    border-radius: 33px;
+    margin-left: 12px;
+    transition: all .3s linear;
+    cursor: pointer;
+    
+}
+.header .navbar .container-fluid .end .profile_icon:hover{
+    background-color: var(--icon);
+}
+
+.header .navbar .container-fluid .end .brightness_icon{
+    color: var(--white);
+    background-color: hsla(0,0%,100%,.15);
+    height: 36px;
+    width: 36px;
+    padding: 8px;
+    border-radius: 33px;
+    margin-left: 12px;
+    transition: all .3s linear;
+    cursor: pointer;
+    
+}
+
+.header .navbar .container-fluid .end .brightness_icon:hover{
+    background-color: var(--icon);
+}
+.header .container-fluid .input_list ul li .menu_list{
+    display: none;
+}
+.header .container-fluid .input_list ul li:hover .menu_list{
+    display: block;
+    background: var(--light_blue);   
+    border-radius: 13px;
+    margin: 0px;
+     padding: 0px;
+     width: 130px;
+     /* margin-left: -30px; */
+
+}
+
+ 
+.header .container-fluid .input_list ul li .menu_list li{
+    margin-top: 10px;
+    cursor: pointer;
+     padding-top:4px;
+    display: flex;
+     padding-bottom: 4px;
+     justify-content: center;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .header .navbar .container-fluid .navbar-brand {
+         margin-left: 0px;
+         padding: 0px;
+         margin-right: 0px;
+         padding-left: 0px;
+    }
+    .header .navbar .container-fluid .input_list {
+         margin-left: 0px;
+         flex-direction: column;
+         width: 100%;
+         align-items: self-start;
+    }
+    .header .navbar .container-fluid #mynavbar .input_list ul{
+        flex-direction: column;
+        align-items: self-start;
+        padding: 9px;
+    }
+    .header .navbar .container-fluid .input_list ul li{
+        margin-bottom: 20px;
+    }
+    .header .navbar .container-fluid .input_list .icon {
+         width: 224px;
+     }
+     .header .navbar .container-fluid .end {
+        width: 149px;
+        display: flex;
+        margin-left: 0px;
+         padding-left: 25px;
+    }
+    .header .navbar .container-fluid .input_list .icon .search {
+         font-size: 14px;
+    }
+          
+    .header .navbar .container-fluid{
+        background-color: var(--blue);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header{
+        background-color: red;
+        height: 0px;
+    }
+    .header .navbar{
+        height: 0px;
+    }
+    .back_bg .header .navbar .container-fluid{
+        background-color: var(--light_bg);
+        box-shadow: 2px 2px;
+    }
+    
+}
+
+
+ 
+@media screen and (max-width: 992px) {
+    .header .navbar .container-fluid .input_list {
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .header .navbar .container-fluid .input_list .icon {
+        width: 224px;
+        position: absolute;
+        left: 0px;
+    }
+    .header .navbar .container-fluid .input_list ul {
+        list-style: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 66px;
+        flex-direction: column;
+        align-items: self-start;
+        padding: 0px;
+    }
+    .header .navbar .container-fluid .end {
+        width: 149px;
+        display: flex;
+        margin-left: 0px;
+        margin-top: -2px;
+        padding-left: 25px;
+    }
+    .header .navbar .container-fluid .input_list ul li {
+        margin-bottom: 16px;
+    }
+
+}
+
+
+/* 
+@media screen and (max-width: 1280px) {
+    .header .navbar .container-fluid .navbar-brand{
+        height: 31px;
+        padding: 0px;
+        margin-left: 36px;
+        padding-left: 22px;
+    }
+
+} */
+
+
+
+
+
+
+
+
+
+
+.back_bg .header{
+    background-color: var(--light_bg);
+}
+.back_bg .header .navbar .container-fluid .navbar-brand img {
+    filter: invert(1);
+}
+.back_bg .header .navbar .container-fluid .input_list .icon {
+    background: white;
+
+}
+.back_bg .header .navbar .container-fluid .input_list .icon .search_icon {
+    color: var(--grey);
+
+}
+ 
+.back_bg .header .navbar .container-fluid .input_list .icon .search::placeholder {
+    color: var(--grey);
+}
+
+
+.back_bg .header .navbar .container-fluid .input_list ul li a {
+        color: var(--c_li);
+
+}
+.back_bg .header .navbar .container-fluid .input_list ul li a:hover{
+    color: var(--header_bg);
+}
+.back_bg .header .navbar .container-fluid .end .hand_icon {
+    background-color: var(--white);
+    color: var(--c_li);
+    border: 1px solid var(--grey);
+}
+ 
+.back_bg .header .navbar .container-fluid .end .profile_icon {
+    background-color: var(--white);
+    color: var(--c_li);
+    border: 1px solid var(--grey);
+}
+
+
+.back_bg .header .navbar .container-fluid .end .brightness_icon {
+    background-color: var(--white);
+    color: var(--c_li);
+    border: 1px solid var(--grey);
+
+}
+.back_bg .header .container-fluid .input_list ul li .menu_list {
+    background-color: var(--white);
+    padding: 10px;
+    width: 130px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.back_bg .header .navbar .container-fluid .input_list .icon .search {
+    color: var(--black);
+}

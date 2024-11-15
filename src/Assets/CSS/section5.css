@@ -1,0 +1,282 @@
+:root {
+   
+    --white:white;
+    --background-color: #f4f5fa;
+    --header_bg:#9155fd;
+    --icon:#8358ff;
+    --black:rgb(0, 0, 0);
+    --blue:#0d102d;
+    --grey:rgb(143, 140, 140);
+    --green:#12902a;
+    --light_blue:#101436;
+    --section_3:#131740;
+    --check:#10b981;
+    --light_bg:#e5f2fa;
+    --c_li:#010129;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+.section5{
+    padding-top:50px;
+    background-color: var(--section_3);
+}
+.section5 h1{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.section5 .container .row{
+    display: flex;
+    align-items: center;
+}
+.section5 .container .row .account{
+    color: var(--white);
+    border: 3px solid #8358ff;
+    outline: 10px solid #beaaf7;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding: 13px;
+    background-color: #8358ff;
+}
+.section5 .container .row h3{
+    color: var(--white);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 32px;
+    font-weight: bold;
+}
+.section5 .container .row p{
+    color: grey;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 15px;
+    margin-top: 21px;
+}
+.section5 .container{
+    max-width: 1227px;
+    padding: 50px 0px;  
+}
+.section5 .container .row .account_second{
+    color: var(--white);
+    border: 3px solid #10b981;
+    outline: 10px solid #c4f2e3;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding: 13px;
+    background-color: #10b981;
+}
+
+
+.section5 .container .row .account_third{
+    color: var(--white);
+    border: 3px solid #428af8;
+    outline: 10px solid #c4f2e3;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding: 13px;
+    background-color: #428af8;
+}
+
+
+.section5 .container .row .account_four{
+    color: var(--white);
+    border: 3px solid #ef4444;
+    outline: 10px solid #ffd0d0;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+    padding: 13px;
+    background-color: #ef4444;
+}
+.section5 .container p{
+    color: var(--white);
+    text-align: center;
+    margin-top: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 17px 0px;
+}
+.section5 .container .subscribe{
+    display: flex;
+    justify-content: space-around;
+    height: 48px;
+    border-radius: 30px;
+    border: 1px solid var(--grey);
+    width: 406px;
+    align-items: center;
+    margin: auto;
+}
+.section5 .container .subscribe input {
+    width: 100%;
+    outline: hidden;
+    border: none;
+    padding-left: 23px;
+    color: var(--white);
+    background-color: transparent;
+}
+.section5 .container .subscribe input::placeholder {
+    color: var(--white);
+}
+.section5 .container .subscribe input:focus{
+    outline:none
+
+}
+.section5 .container .subscribe .subscribe_button {
+    border-radius: 30px;
+    height: 32px;
+    color: var(--white);
+    background-color: var(--icon);
+    font-weight: bold;
+    transition: all .4s linear;
+    border: none;
+     cursor: pointer;
+     font-size: 14px;
+     padding-left: 20px;
+     padding-right: 20px;
+} 
+.section5 .container .subscribe .subscribe_button:hover {
+    background-color: #6b41e4;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .section5 .container .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .section5 .container .subscribe .subscribe_button {
+         right: 319px;
+     }
+     .section5 .container .subscribe input {
+        width: 402px;
+        margin-left: 11px;
+        padding-left: 0px;
+     }  
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+.section5 .container .subscribe input {
+    width: 402px;
+ }  
+
+.section5 .container .subscribe .subscribe_button {
+    right: 256px;
+}
+.section5 .container p {
+     font-size: 16px;
+ }
+
+}
+@media screen and (max-width: 768px) {
+    .section5 .container .subscribe .subscribe_button {
+        right: 246px;
+    }
+    .section5 .container .subscribe input {
+        width: 312px;
+    }
+
+}
+@media screen and (max-width: 576px) {
+.section5 .container .row p {
+     padding: 13px;
+}
+
+.section5 .container p {
+    font-size: 20px;
+}
+.section5 .container .subscribe .subscribe_button {
+    right: 124px;
+}
+}
+
+@media screen and (max-width: 388px) {
+
+.section5 .container p {
+    font-size: 16px;
+    margin: 0px;
+}
+.section5 .container .subscribe .subscribe_button {
+    right: 44px;
+}
+
+}
+
+
+ 
+@media screen and (max-width: 600px) {
+    .section5 .container .subscribe .subscribe_button {
+        right: 158px;
+    }
+
+}
+
+
+
+ 
+
+
+.back_bg .section5{
+    background-color: var(--white);
+}
+.back_bg .section5 h1{
+    color: var(--c_li);
+}
+.back_bg .section5 .container .row h3{
+    color: var(--c_li);
+}
+.back_bg .section5 .container .row p{
+    color: var(--black);
+}
+.back_bg .section5 .container p{
+    color: var(--c_li);
+    padding: 10px;
+}
+.back_bg .section5 .container .subscribe input{
+    background-color: var(--white);
+    color: black;
+}
+.back_bg .section5 .container .subscribe input::placeholder{
+    color: var(--grey);
+
+}
+@media screen and (max-width: 405px) {
+    .section5 .container .subscribe{
+        width: 333px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .section5 .container .subscribe{
+        width: 100%;
+    }
+    .section5 .container .subscribe input{
+        padding-left: 11px;
+    }
+    .section5 .container .subscribe .subscribe_button{
+        width: 100%;
+        padding: 0px;
+    }
+}

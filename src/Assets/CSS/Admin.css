@@ -1,0 +1,62 @@
+:root{
+    --white:white;
+    --background-color: #f4f5fa;
+    --header_bg:#9155fd;
+    --icon:#8358ff;
+    --black:rgb(0, 0, 0);
+    --blue:#0d102d;
+    --grey:rgb(143, 140, 140);
+    --light_bg:#e5f2fa;
+    --grey:grey;
+    --c_li:#010129;
+
+}
+
+.admin{
+    /* padding-top:40px */
+    display: flex;
+    margin: auto;
+    
+}
+.admin .form{
+    background-color:var(--blue);
+    /* display: flex; */
+    padding-top: 14px;
+    margin: auto;
+    width: 400px;
+    border-radius: 30px;
+    padding: 30px;
+}
+.admin .form h2{
+    color: var(--white);
+
+}
+.admin .form .user{
+    color: var(--white);
+    font-size: 21px;
+} 
+.admin .form .first_input{
+    border-radius: 20px;
+    font-size: 13px;
+    width: 100%;
+    outline: none;
+}
+.admin .form .first_input:focus{
+    outline: none;
+    border: none;
+}
+.admin .form button{
+    background-color: var(--header_bg);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    transition: all 0.4s linear;
+}
+.admin .form button:hover{
+    background-color: var(--icon);
+}
+.admin .form button a{
+    color: var(--white);
+
+}

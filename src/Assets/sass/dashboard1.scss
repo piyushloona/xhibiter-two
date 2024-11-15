@@ -1,0 +1,916 @@
+$background: white;
+$body: #f4f5fa;
+$start_font: #9155fd;
+$font_h2: #534f5a;
+$p: grey;
+$h_color: #7f3ef8;
+$back: #f4f5fa;
+$git: #fafafa;
+$black: #000000;
+$customer: #56ca00;
+$dollar: #16b1ff;
+$products: #ffb400;
+$zip_back: #f7f7f8;
+$red: #ff4c51;
+
+.dashboard1{
+    .container-fluid{
+        .header{
+            background-color:$back;
+            position: fixed;
+            z-index: 2;
+            top:0;
+            box-shadow: 2px 1px grey;
+            height: 77px;
+            .navbar-toggler{
+                color: $start_font;
+                height: 20px;
+                .navbar-toggler-icon{
+
+                }
+            }
+            .field_icon{
+                .field{
+                    border:1px solid grey;
+                    border-radius: 40px;
+                    height: 41px;
+                    width: 163px;
+                    input{
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                        width: 105px;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                button{
+                    border-radius: 9px;
+                    border: none;
+                    background-color: $start_font;
+                    color: $background;
+                    transition: all 0.3s linear;
+                    a{
+                      color: $background;
+                    }
+                    &:hover{
+                        background-color: $h_color;
+                    }
+                }
+            }
+        }
+    }
+    .first{
+        margin-top: 80px;
+    }
+    .container-fluid{
+        .main-content{
+            .sidebar{
+                background-color: $back;
+                width: 225px;
+                box-shadow: 10px 0 22px -2px #888;
+                transition: all 0.5s linear;
+                border-radius:0px 10px;
+                position: fixed;
+                height: 100vh;
+                overflow-y: scroll;
+                .sidebar_brand{
+                h1{
+                    color: $start_font;
+                    font-size: 18px;
+                 }
+               }
+               .sidebar-pages {
+               display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                .nav {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  padding: 13px;
+                  .nav-item {
+                    transition: all .3s linear;
+                    &:hover{
+                      background-color: $start_font;
+                      border-radius: 40px;
+                      border: none;
+                    }
+                    .nav-link {
+                      color: $font_h2;
+                      border: none;
+                      span{
+                        font-size: 15px;
+                      }
+                      &:hover{
+                        color: white;
+                      }
+                      &:hover .home{
+                        color: white;
+                      }
+                      &:hover .manage{
+                        color: white;
+                      }
+                      &:hover .login{
+                        color: white;
+                      }
+                      &:hover .registers{
+                        color: white;
+                      }
+                      &:hover .error{
+                        color: white;
+                      }
+                      &:hover .app_icon{
+                        color: white;
+                      }
+                      &:hover .credit_card{
+                        color: white;
+                      }
+                      &:hover .table_icon{
+                        color: white;
+                      }
+                      &:hover .form_layout{
+                        color: white;
+                      }
+                   
+                      .home {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        color: $start_font;
+                      }
+                      .manage {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        color: $start_font;
+          
+                      }
+                      .login {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background: none;
+                        color: $start_font;
+          
+                      }
+                      .registers {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                      .error {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                      .app_icon {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                      .credit_card {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                      .table_icon {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                      .form_layout {
+                        height: 20px;
+                        margin-top: -5px;
+                        width: 28px;
+                        background-color: none;
+                        color: $start_font;
+          
+                      }
+                    }
+                  }
+                  p {
+                    margin-top: 20px;
+                    color: grey;
+                    margin-left: 11px;
+                    font-size: 13px;
+                  }
+                }
+              }
+            }
+            .right-content{
+                padding-left: 225px;
+                transition: all 0.5s linear;
+                background: $back;
+            
+                .row {
+                    display: flex;
+                    width: 100%;
+                    border-radius: 13px;
+                    margin: 0px;
+                     align-items: center;
+                     .col-md-8{
+                      padding: 0px;
+                    }
+                    .congrats {
+                      background-color: white;
+                      border-radius: 8px;
+                      padding: 30px;
+                      h2 {
+                        font-size: 21px;
+                      }
+                      p {
+                        color: $p;
+                        font-size: 16px;
+                      }
+                      .troffy {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-top: 22px;
+                        .heading_h3 {
+                          h3 {
+                            font-size: 22px;
+                            color: $start_font;
+                            font-weight: bold;
+                          }
+                          button {
+                            background-color: #9155fd;
+                            transition: all 0.3s linear;
+                            border: none;
+                            border-radius: 7px;
+                            width: 97px;
+                            height: 34px;
+                           
+                            font-size: 13px;
+                            a{
+                              color: white;
+                            }
+                            &:hover {
+                              background-color: $h_color;
+                            }
+                          }
+                        }
+                        img {
+                          height: 95px;
+                          width: 88px;
+                          margin-top: -29px;
+                        }
+                      }
+                    }
+                    .growth {
+                      background-color: white;
+                      border-radius: 10px;
+                      padding: 13px;
+                      padding-left: 23px;
+                      h1 {
+                        font-size: 22px;
+                        padding-top: 23px;
+                      }
+                      p {
+                        font-size: 16px;
+                        span {
+                          color: $p;
+                        }
+                      }
+                      .growth_icon {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .growth_first {
+                            display: flex;
+                          padding: 7px;
+                          margin-top: 24px;
+                          .call_icon {
+                            background-color: $start_font;
+                            height: 41px;
+                            width: 41px;
+                            border-radius: 7px;
+                            color: white;
+                            padding: 7px;
+                          }
+                          .growth_heading {
+                            padding: 8px;
+                            line-height: 0.1px;
+                            p {
+                              color: $p;
+                              font-size: 14px;
+                            }
+                            h4 {
+                              font-size: 17px;
+                            }
+                          }
+                          .customers {
+                            background-color: $customer;
+                            height: 41px;
+                            width: 41px;
+                            border-radius: 7px;
+                            color: white;
+                            padding: 7px;
+                          }
+                          .products {
+                            background-color: $products;
+                            height: 41px;
+                            width: 41px;
+                            border-radius: 7px;
+                            color: white;
+                            padding: 7px;
+                          }
+                          .dollar {
+                            background-color: $dollar;
+                            height: 41px;
+                            width: 41px;
+                            border-radius: 7px;
+                            color: white;
+                            padding: 7px;
+                          }
+                        }
+                      }
+                    }
+                  }
+                  .row_first{
+                    width: 100%;
+                    margin-top: 20px;
+                    padding-bottom: 16px;
+                    display: flex;
+                    .formar{
+                      display: flex;
+                      width: 100%;
+                      border-radius: 13px;
+                      margin: 0px;
+                      padding: 0px;
+                      margin-top: 12px;
+                    //   padding-left: 23px;
+                    }
+                    .weekly {
+                      background-color: white;
+                      padding: 20px;
+                      border-radius: 8px;
+                    //   width: 349px;
+                      margin-left: 0px;
+                      h2 {
+                        font-size: 23px;
+                      }
+                      .image1 {
+                        width: 100%;
+                        img {
+                          width: 100%;
+                          height: 179px;
+                        }
+                      }
+                    
+                    
+                      .yours {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 5px;
+                        h2 {
+                          font-size: 22px;
+                        }
+                        p {
+                          color: $p;
+                          font-size: 14px;
+                        }
+                      }
+                      button {
+                        background-color: $start_font;
+                        width: 100%;
+                        border-radius: 6px;
+                        padding: 8px;
+                        border: none;
+                        transition: all 0.3s linear;
+                      
+                        a{
+                          color: white;
+                          font-size: 13px;
+                        }
+                        &:hover {
+                          background-color: $h_color;
+                        }
+                      }
+                    }
+                    .total {
+                      background-color: white;
+                      border-radius: 10px;
+                      padding: 15px;
+                      margin-left: 3px;
+                    //   width: 377px;
+                      h2 {
+                        font-size: 20px;
+                        padding-top: 6px;
+                      }
+                      h1 {
+                        font-size: 31px;
+                        padding-top: 25px;
+                        span {
+                          color: $customer;
+                          font-size: 19px;
+                        }
+                      }
+                      p {
+                        color: $p;
+                        font-size: 14px;
+                      }
+                      .zip {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-bottom: 20px;
+                        .zip_first {
+                          display: flex;
+                          .zip_img {
+                            height: 20px;
+                            width: 46px;
+                            img {
+                              width: 100%;
+                              background-color: $zip_back;
+                              padding: 5px;
+                              border-radius: 3px;
+                            }
+                          }
+                          .zip_heading {
+                            line-height: 1.1px;
+                            h4 {
+                              font-size: 18px;
+                              padding-left: 10px;
+                            }
+                            p {
+                              font-size: 12px;
+                              padding-left: 9px;
+                            }
+                          }
+                        }
+                        .zip_second {
+                          .progress1 {
+                            display: flex;
+                            flex-direction: column;
+                            h3 {
+                              font-size: 16px;
+                              font-weight: 600;
+                            }
+                            #file {
+                              width: 96px;
+                              height: 10px;
+                            }
+                          }
+                        }
+                        .zip_img1 {
+                          height: 20px;
+                          width: 46px;
+                          img {
+                            width: 100%;
+                            background-color: #f7f7f8;
+                            padding: 7px;
+                            border-radius: 3px;
+                            height: 44px;
+                          }
+                        }
+                      }
+                    }
+                    .row {
+                      .profit {
+                        background-color: white;
+                        border-radius: 10px;
+                        padding: 10px;
+                        margin-bottom: 11px;
+                        // width: 138px;
+                        .poll {
+                          background-color: $customer;
+                          border-radius: 50%;
+                          color: white;
+                          width: 40px;
+                          height: 40px;
+                          padding: 8px;
+                        }
+                        h1 {
+                          font-size: 16px;
+                          padding-top: 12px;
+                        }
+                        h2 {
+                          font-size: 18px;
+                          font-weight: bold;
+                          padding-top: 10px;
+                          sup {
+                            color: $customer;
+                          }
+                        }
+                        p {
+                          font-size: 15px;
+                          padding-top: 5px;
+                        }
+                        .dollar1 {
+                          background-color: $p;
+                          border-radius: 50%;
+                          color: white;
+                          width: 40px;
+                          height: 40px;
+                          padding: 8px;
+                        }
+                        .business {
+                          background-color: $start_font;
+                          border-radius: 50%;
+                          color: white;
+                          width: 40px;
+                          height: 40px;
+                          padding: 8px;
+                        }
+                        .help {
+                          background-color: $products;
+                          border-radius: 50%;
+                          color: white;
+                          width: 40px;
+                          height: 40px;
+                          padding: 8px;
+                        }
+                      }
+                    }
+                  }
+
+                  .row_second {
+                    display: flex;
+                    width: 100%;
+                    margin-top: 0px;
+                    padding-bottom: 20px;
+                    .row{
+                      padding: 0px;
+                    }
+                    .col-md-8{
+                      .row{
+                        padding: 0px;
+                        .col-md-6{
+                          padding: 0px;
+                        }
+                      }
+                    }
+                    
+                    .count {
+                      background-color: white;
+                    //   width: 346px;
+                      padding: 15px;
+                      border-radius: 10px;
+                      margin-left: 0px;
+                      h2 {
+                        font-size: 23px;
+                      }
+                      .country {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 24px;
+                        .country_first {
+                          display: flex;
+                          h6 {
+                            background-color: $customer;
+                            border-radius: 50%;
+                            color: white;
+                            width: 40px;
+                            height: 40px;
+                            padding: 10px;
+                            font-size: 18px;
+                            padding-left: 7px;
+                          }
+                          .dollars {
+                            margin-left: 10px;
+                            line-height: 1.1px;
+                            h2 {
+                              font-size: 18px;
+                              span {
+                                color: $customer;
+                              }
+                            }
+                          }
+                          .second_h6 {
+                            background-color: $red;
+                          }
+                          .third_h6 {
+                            background-color: $products;
+                            padding-left: 12px;
+                          }
+                          .four_h6 {
+                            background-color: $font_h2;
+                            padding-left: 9px;
+                          }
+                          .five_h6 {
+                            background-color: $red;
+                          }
+                        }
+                        .left {
+                          line-height: 1.1px;
+                          h3 {
+                            font-size: 17px;
+                          }
+                          p {
+                            font-size: 12px;
+                            text-align: right;
+                          }
+                        }
+                      }
+                    }
+                    .row {
+                      .deposit {
+                        padding: 14px;
+                        padding-bottom: 33px;
+          
+                        .all {
+                          display: flex;
+                          justify-content: space-between;
+                          margin-bottom: 27px;
+                          h2 {
+                            font-size: 21px;
+                          }
+                          p {
+                            color: $p;
+                            font-size: 14px;
+                          }
+                        }
+                        .account {
+                          display: flex;
+                          justify-content: space-between;
+                          align-items: center;
+                          padding-bottom: 20px;
+                          .sell {
+                            display: flex;
+                            img {
+                              height: 33px;
+                            }
+                            .sell_para {
+                              line-height: 1.1px;
+                              margin-left: 11px;
+                              h3 {
+                                font-size: 14px;
+                              }
+                              p {
+                                color: $p;
+                                font-size: 13px;
+                              }
+                            }
+                          }
+                          h4 {
+                            color: $customer;
+                            font-size: 14px;
+                            font-weight: bold;
+                          }
+                          .neg {
+                            color: $red;
+                          }
+                        }
+                      }
+                    }
+                    .withdraw {
+                      position: relative;
+                      &::before {
+                        content: "";
+                        border: 1px solid grey;
+                        position: absolute;
+                        height: 388px;
+                        top: 21px;
+                        left: -3px;
+                      }
+                    }
+                  }
+
+            }
+        }
+    }
+}
+
+.mystyle{
+  .dashboard1{
+    .container-fluid{
+      .main-content{
+        .sidebar{
+          width: 80px;
+          transition: all 0.5s linear;
+          .sidebar-pages{
+            .nav{
+              .nav-item{
+                .nav-link{
+                  span{
+                    display: none;
+                  }
+                }
+              }
+              p{
+                display: none;
+              }
+            }
+          }
+          .sidebar_brand{
+            h1{
+              padding-left: 33px !important;
+              span{
+                display: none;
+              }
+            }
+          }
+        }
+        .right-content{
+          padding-left: 80px;
+          transition: all 0.5s linear;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .dashboard1{
+        .container-fluid{
+            .main-content{
+                .right-content{
+                    .row{
+                        gap: 20px;
+                    }
+                    .row_second{
+                        .withdraw::before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .dashboard1{
+        .container-fluid{
+            .main-content{
+                .right-content{
+                    .row{
+                        .growth{
+                            .growth_icon{
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+.dashboard1{
+  .container-fluid{
+    .header{
+      .field_icon{
+        padding-right: 8px !important;
+      }
+    }
+  }
+}
+.mystyle{
+    .dashboard1{
+         
+        .container-fluid{
+            .main-content{
+                .sidebar{
+                    width: 80px;
+                    height: 100vh;
+                    z-index: 333;
+                    .sidebar_brand{
+                        h1{
+                            span{
+                                display: none;
+                            }
+                            padding-left: 31px !important;
+                        }
+                    }
+                    .sidebar-pages{
+                        .nav{
+                            p{
+                                display: none;
+                            }
+                            .nav-item{
+                                .nav-link{
+                                    span{
+                                        display: none;
+                                    }
+                                }
+                            
+                            }
+                        }
+                    }
+                }
+            .right-content{
+                padding-left: 96px;
+                transition: all 0.3s linear;
+                .row_first{
+                 }
+            }
+            }
+        }
+    }
+}
+}
+
+
+@media screen and (max-width: 576px) {
+    .dashboard1{
+        .container-fluid{
+            .main-content{
+                .right-content{
+                    padding-left: 0px;
+                }
+                .sidebar{
+                    z-index: 222;
+                    display: none;
+                }
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 576px){
+  .mystyle{
+    .dashboard1{
+      .container-fluid{
+        .main-content{
+          .sidebar{
+            display: block;
+            width: 223px;
+            // transition: all 0.5s linear;
+            .sidebar-pages{
+              .nav{
+                .nav-item{
+                  .nav-link{
+                    display: flex;
+                    align-items: center;
+                    span{
+                      display: block;
+                    }
+                  }
+                }
+              }
+            }
+            .sidebar_brand{
+              h1{
+                display: flex;
+                align-items: center;
+                
+                span{
+                  display: block;
+                  padding-top: 3px;
+                }
+              }
+            }
+          }
+          .right-content{
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 445px) {
+    .dashboard1{
+        .container-fluid{
+            .main-content{
+                .right-content{
+                    .row_first{
+                        .total{
+                            .zip{
+                                flex-direction: column;
+                                .zip_second{
+                                    .progress1{
+                                        padding-left: 55px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

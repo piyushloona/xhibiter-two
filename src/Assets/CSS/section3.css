@@ -1,0 +1,230 @@
+:root {
+   
+    --white:white;
+    --background-color: #f4f5fa;
+    --header_bg:#9155fd;
+    --icon:#8358ff;
+    --black:rgb(0, 0, 0);
+    --blue:#0d102d;
+    --grey:rgb(143, 140, 140);
+    --green:#12902a;
+    --light_blue:#101436;
+    --section_3:#131740;
+    --check:#10b981;
+    --light_bg:#e5f2fa;
+    --c_li:#010129;
+
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+.section3{
+    background: var(--light_blue);
+    padding:84px 0px;   
+}
+.section3 h1{
+    text-align: center;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: bold;
+}
+.section3 h1 span{
+    color: var(--icon);
+}
+.section3 .container{
+    /* padding:10px; */
+    max-width: 1205px;
+    margin-top: 50px;
+}
+.section3 .container .row .funny{
+    display: flex;
+    background-color: var(--section_3);
+    padding: 9px 20px;
+    border-radius: 19px;
+    /* width: 100%; */
+    height: 99px;
+    padding-top: 20px;
+    width: 247px;
+}
+.section3 .container .row{
+    margin-bottom: 30px;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.section3 .container .row .funny .images{
+    position: relative;
+    cursor: pointer;
+}
+.section3 .container .row .funny .images img{
+    border-radius: 10px;
+}
+.section3 .container .row .funny .images h6{
+    position: absolute;
+    color: var(--white);
+    border: 2px solid grey;
+    padding: 0px;
+    border-radius: 29px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    background: var(--blue);
+    top: 15px;
+    left: -11px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section3 .container .row .funny .images .check_icon{
+    position: absolute;
+    color: var(--white);
+    border: 2px solid grey;
+    padding: 2px;
+    border-radius: 29px;
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+    padding-left: 2px;
+    background:var(--check);
+    top: 33px;
+    left: -11px;
+}
+.section3 .container .row .funny .cat{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+.section3 .container .row .funny .cat h4{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 17px;
+    cursor: pointer;
+}
+
+.section3 .container .row .funny .cat p{
+    color: var(--grey);
+    font-size: 13px;
+    padding-left: 17px;
+}
+.section3 .container button{
+    margin: auto;
+    display: flex;
+    margin-top: 50px;
+    width: 180px;
+    border-radius: 30px;
+    height: 50px;
+    color: var(--white);
+    background-color: var(--icon);
+    font-weight: bold;
+    transition: all .4s linear;
+    border: none;
+    /* box-shadow: 2px 1px 5px 1px white; */
+    padding: 14px;
+    padding-left: 28px;
+    cursor: pointer;
+}
+
+.section3 .container button:hover{
+    background-color: #6b41e4;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .section3 .container .row{
+        /* padding-left: 23px; */
+    }
+    .section3 .container .row .funny {
+         width: 225px;
+    }
+    .section3 .container .row .funny .cat h4 {
+         font-size: 14px;
+     }
+     .section3 .container .row .col-md-6{
+        margin-bottom: 30px;
+     }
+     /* .section3 .container {
+         max-width: 1205px;
+        margin-top: 50px;
+        padding-left: 76px;
+    } */
+    
+}
+
+
+@media screen and (max-width: 1045x) {
+    .section3 .container .row {
+        padding-left: 11px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section3 .container .row {
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .section3 .container .row .funny {
+        width: 348px;
+    }
+    .section3 .container {
+        /* padding: 10px; */
+        max-width: 1205px;
+        margin-top: 50px;
+        padding-left: 19px;
+    }
+    .section3 .container .row .funny .cat h4 {
+        font-size: 19px;
+    }
+    .section3 .container .row .funny{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    
+ .section3 .container .row .funny {
+    width: 100%;
+}
+
+}
+
+
+.back_bg .section3{
+    background-color: var(--white);
+}
+.back_bg .section3 h1 {
+    color: var(--c_li);
+}
+.back_bg .section3 .container .row .funny{
+    background-color: var(--white);
+    border:1px solid rgb(226 221 221);
+}
+.back_bg .section3 .container .row .funny .cat h4{
+    color: var(--c_li);
+}
+
+
+@media screen and (max-width: 576px) {
+    .section3 .container .row{
+        padding-left: 5px;
+    }
+
+}

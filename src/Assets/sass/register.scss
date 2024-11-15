@@ -1,0 +1,115 @@
+$background: white;
+$body: #f4f5fa;
+$start_font: #9155fd;
+$font_h2:#534f5a;
+$p:grey;
+$h_color:#7f3ef8;
+
+@mixin flexing {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+}
+.register {
+  background-color: $body;
+  position: relative;
+  padding:20px;
+
+  .register_page {
+    background-color: $background;
+    @include flexing;
+    width: 400px;
+    margin: auto;
+     padding: 25px;
+     border-radius: 5px;
+    
+     .back_button{
+        color: var(--purple);
+        transition: all 0.5s linear;
+        height: 30px;
+        width: 30px;
+        &:hover{
+            background-color: var(--purple);
+            color: var(--white);
+            border-radius: 20px;
+            padding: 3px;
+        }
+     }
+
+    h1 {
+      color: $start_font;
+      font-size: 25px;
+      text-align: center;
+    .icon{
+        height: 50px;
+        margin-top: -5px;
+    }
+    }
+    h2{
+        color:$font_h2;
+        font-size: 25px;
+    }
+    p{
+        color: $p;
+        font-size: 14px;
+    }
+    .form-floating input{
+        color:black;
+        outline: none;
+        font-size: 15px;
+        box-shadow: none;
+        &:focus{
+            border:2px solid $start_font;
+             
+    }
+    }
+    .form-floating label{
+        color: $start_font;
+        text-transform: capitalize;
+    }
+    button{
+        background-color: $start_font;
+        border: none;
+        border-radius: 4px;
+        font-size: 20px;
+        color: $body;
+        transition: all .3s linear;
+        cursor: pointer;
+        padding:6px;
+        a{
+            color: $background;
+        }
+        &:hover{
+            background-color:$h_color;
+        }
+    }
+  }
+  .left_pic{
+    position: absolute;
+    bottom: 0px;
+    img{
+        width: 100%;
+    }
+    @media screen and (max-width: 992px) {
+        display: none;
+    }
+  }
+  .right_pic{
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+   
+  }
+
+
+
+

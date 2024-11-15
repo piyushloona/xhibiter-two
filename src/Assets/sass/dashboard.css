@@ -1,0 +1,825 @@
+.dashboard {
+  width: 100%;
+  display: flex;
+}
+.dashboard .sidebar {
+  position: fixed;
+  width: 223px;
+  background-color: #f4f5fa;
+  height: 100vh;
+  box-shadow: 10px 0 22px -2px #888;
+  margin-top: -7px;
+  border-radius: 0px 10px;
+  margin-left: -11px;
+  transition: all 0.3s linear;
+}
+.dashboard .sidebar .sidebar_brand {
+  padding-top: 26px;
+  padding-left: 20px;
+}
+.dashboard .sidebar .sidebar_brand h1 {
+  color: #534f5a;
+  font-size: 21px;
+  text-align: left;
+  margin-left: 15px;
+}
+.dashboard .sidebar .sidebar_brand .icon {
+  height: 44px;
+  margin-top: -5px;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboard .sidebar .sidebar-pages .nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 13px;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item {
+  transition: all 0.3s linear;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item:hover {
+  background-color: #9155fd;
+  border-radius: 40px;
+  border: none;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link {
+  color: #534f5a;
+  border: none;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .home {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .manage {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .login {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .registers {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .error {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .app_icon {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .credit_card {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .table_icon {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link:hover .form_layout {
+  color: white;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .home {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .manage {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .login {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .registers {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .error {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .app_icon {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .credit_card {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .table_icon {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .form_layout {
+  height: 20px;
+  margin-top: -5px;
+  width: 28px;
+  background-color: none;
+  color: #9155fd;
+}
+.dashboard .sidebar .sidebar-pages .nav p {
+  margin-top: 20px;
+  color: grey;
+  margin-left: 11px;
+  font-size: 13px;
+}
+.dashboard .header1 {
+  background-color: #f4f5fa;
+  width: 100%;
+  transition: all 0.3s linear;
+}
+.dashboard .header1 .one .two {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 75px;
+  align-items: center;
+  transition: all 0.5s linear;
+  position: relative;
+  box-shadow: -5px 2px 2px -1px grey;
+  margin-bottom: 8px;
+}
+.dashboard .header1 .one .two .navbar-toggler {
+  background-color: #9155fd;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.dashboard .header1 .one .two .navbar-toggler .navbar-toggler-icon .tog_icon {
+  color: white;
+}
+.dashboard .header1 .one .two .header_first {
+  border: 1px solid grey;
+  height: 30px;
+  height: 43px;
+  margin-left: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.dashboard .header1 .one .two .header_first .field_icon {
+  display: flex;
+  padding-top: 6px;
+}
+.dashboard .header1 .one .two .header_first .field_icon input {
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  height: 42px;
+  margin-top: -7px;
+  border-radius: 20px;
+}
+.dashboard .header1 .one .two .header_first .field_icon input:focus {
+  border: none;
+  outline: none;
+}
+.dashboard .header1 .one .two .header_first .field_icon .search_icon {
+  margin-left: 9px;
+  padding-top: 2px;
+}
+.dashboard .header1 .one .two .header_second {
+  display: flex;
+}
+.dashboard .header1 .one .two .header_second button {
+  background-color: #9155fd;
+  border-radius: 6px;
+  width: 105px;
+  color: white;
+  border: none;
+  height: 42px;
+  margin-right: 35px;
+  transition: all 0.3s linear;
+}
+.dashboard .header1 .one .two .header_second button:hover {
+  background-color: #7f3ef8;
+}
+.dashboard .header1 .section .container {
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+.dashboard .header1 .section .container .main-content {
+  padding-left: 223px;
+}
+.dashboard .header1 .section .container .main-content .row {
+  display: flex;
+  width: 100%;
+  border-radius: 13px;
+  margin: 0px;
+  margin-left: -13px;
+  align-items: center;
+}
+.dashboard .header1 .section .container .main-content .row .col-md-8 {
+  padding: 0px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats h2 {
+  font-size: 21px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats p {
+  color: grey;
+  font-size: 16px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats .troffy {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats .troffy .heading_h3 h3 {
+  font-size: 22px;
+  color: #9155fd;
+  font-weight: bold;
+}
+.dashboard .header1 .section .container .main-content .row .congrats .troffy .heading_h3 button {
+  background-color: #9155fd;
+  transition: all 0.3s linear;
+  border: none;
+  border-radius: 7px;
+  width: 97px;
+  height: 34px;
+  color: white;
+  font-size: 13px;
+}
+.dashboard .header1 .section .container .main-content .row .congrats .troffy .heading_h3 button:hover {
+  background-color: #7f3ef8;
+}
+.dashboard .header1 .section .container .main-content .row .congrats .troffy img {
+  height: 95px;
+  width: 88px;
+  margin-top: -29px;
+}
+.dashboard .header1 .section .container .main-content .row .growth {
+  background-color: white;
+  border-radius: 10px;
+  padding: 13px;
+  padding-left: 23px;
+}
+.dashboard .header1 .section .container .main-content .row .growth h1 {
+  font-size: 22px;
+  padding-top: 23px;
+}
+.dashboard .header1 .section .container .main-content .row .growth p {
+  font-size: 16px;
+}
+.dashboard .header1 .section .container .main-content .row .growth p span {
+  color: grey;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first {
+  display: flex;
+  padding: 7px;
+  margin-top: 24px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .call_icon {
+  background-color: #9155fd;
+  height: 41px;
+  width: 41px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .growth_heading {
+  padding: 8px;
+  line-height: 0.1px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .growth_heading p {
+  color: grey;
+  font-size: 14px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .growth_heading h4 {
+  font-size: 17px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .customers {
+  background-color: #56ca00;
+  height: 41px;
+  width: 41px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .products {
+  background-color: #ffb400;
+  height: 41px;
+  width: 41px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px;
+}
+.dashboard .header1 .section .container .main-content .row .growth .growth_icon .growth_first .dollar {
+  background-color: #16b1ff;
+  height: 41px;
+  width: 41px;
+  border-radius: 7px;
+  color: white;
+  padding: 7px;
+}
+.dashboard .header1 .section .container .main-content .row_first {
+  width: 100%;
+  margin-top: 20px;
+  padding-bottom: 16px;
+  display: flex;
+}
+.dashboard .header1 .section .container .main-content .row_first .formar {
+  display: flex;
+  width: 100%;
+  border-radius: 13px;
+  margin: 0px;
+  margin-left: 27px;
+  padding: 0px;
+  margin-top: 12px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 344px;
+  margin-left: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly h2 {
+  font-size: 23px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly .image1 {
+  width: 100%;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly .image1 img {
+  width: 100%;
+  height: 179px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly .yours {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly .yours h2 {
+  font-size: 22px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly .yours p {
+  color: grey;
+  font-size: 14px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly button {
+  background-color: #9155fd;
+  color: white;
+  width: 100%;
+  border-radius: 6px;
+  padding: 8px;
+  border: none;
+  transition: all 0.3s linear;
+  font-size: 13px;
+}
+.dashboard .header1 .section .container .main-content .row_first .weekly button:hover {
+  background-color: #7f3ef8;
+}
+.dashboard .header1 .section .container .main-content .row_first .total {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: 3px;
+  width: 377px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total h2 {
+  font-size: 20px;
+  padding-top: 6px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total h1 {
+  font-size: 31px;
+  padding-top: 25px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total h1 span {
+  color: #56ca00;
+  font-size: 19px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total p {
+  color: grey;
+  font-size: 14px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first {
+  display: flex;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first .zip_img {
+  height: 20px;
+  width: 46px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first .zip_img img {
+  width: 100%;
+  background-color: #f7f7f8;
+  padding: 5px;
+  border-radius: 3px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first .zip_heading {
+  line-height: 1.1px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first .zip_heading h4 {
+  font-size: 18px;
+  padding-left: 10px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_first .zip_heading p {
+  font-size: 12px;
+  padding-left: 9px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_second .progress1 {
+  display: flex;
+  flex-direction: column;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_second .progress1 h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_second .progress1 #file {
+  width: 96px;
+  height: 10px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_img1 {
+  height: 20px;
+  width: 46px;
+}
+.dashboard .header1 .section .container .main-content .row_first .total .zip .zip_img1 img {
+  width: 100%;
+  background-color: #f7f7f8;
+  padding: 7px;
+  border-radius: 3px;
+  height: 44px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 11px;
+  width: 138px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit .poll {
+  background-color: #56ca00;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit h1 {
+  font-size: 16px;
+  padding-top: 12px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit h2 sup {
+  color: #56ca00;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit p {
+  font-size: 15px;
+  padding-top: 5px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit .dollar1 {
+  background-color: grey;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit .business {
+  background-color: #9155fd;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+.dashboard .header1 .section .container .main-content .row_first .row .profit .help {
+  background-color: #ffb400;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+}
+.dashboard .header1 .section .container .main-content .row_second {
+  display: flex;
+  width: 100%;
+  margin-top: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row {
+  padding: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_second .col-md-8 .row {
+  padding: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_second .col-md-8 .row .col-md-6 {
+  padding: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row {
+  margin-left: 6px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count {
+  background-color: white;
+  width: 346px;
+  padding: 15px;
+  border-radius: 10px;
+  margin-left: 0px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count h2 {
+  font-size: 23px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first {
+  display: flex;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first h6 {
+  background-color: #56ca00;
+  border-radius: 50%;
+  color: white;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  padding-left: 7px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .dollars {
+  margin-left: 10px;
+  line-height: 1.1px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .dollars h2 {
+  font-size: 18px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .dollars h2 span {
+  color: #56ca00;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .second_h6 {
+  background-color: #ff4c51;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .third_h6 {
+  background-color: #ffb400;
+  padding-left: 12px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .four_h6 {
+  background-color: #534f5a;
+  padding-left: 9px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .country_first .five_h6 {
+  background-color: #ff4c51;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .left {
+  line-height: 1.1px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .left h3 {
+  font-size: 17px;
+}
+.dashboard .header1 .section .container .main-content .row_second .count .country .left p {
+  font-size: 12px;
+  text-align: right;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit {
+  padding: 14px;
+  padding-bottom: 33px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .all {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .all h2 {
+  font-size: 21px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .all p {
+  color: grey;
+  font-size: 14px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .sell {
+  display: flex;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .sell img {
+  height: 33px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .sell .sell_para {
+  line-height: 1.1px;
+  margin-left: 11px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .sell .sell_para h3 {
+  font-size: 14px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .sell .sell_para p {
+  color: grey;
+  font-size: 13px;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account h4 {
+  color: #56ca00;
+  font-size: 14px;
+  font-weight: bold;
+}
+.dashboard .header1 .section .container .main-content .row_second .row .deposit .account .neg {
+  color: #ff4c51;
+}
+.dashboard .header1 .section .container .main-content .row_second .withdraw {
+  position: relative;
+}
+.dashboard .header1 .section .container .main-content .row_second .withdraw::before {
+  content: "";
+  border: 1px solid grey;
+  position: absolute;
+  height: 400px;
+  top: 21px;
+  left: -3px;
+}
+
+.mystyle .dashboard .sidebar {
+  width: 80px;
+  box-shadow: 10px 0 18px -2px #888;
+  transition: all 0.3s linear;
+}
+.mystyle .dashboard .sidebar .sidebar_brand h1 {
+  margin-left: -4px;
+}
+.mystyle .dashboard .sidebar .sidebar_brand h1 span {
+  display: none;
+}
+.mystyle .dashboard .sidebar .sidebar_brand h1 .icon {
+  height: 60px;
+  margin-top: -16px;
+  color: #9155fd;
+  width: 35px;
+  margin-left: 10px;
+}
+.mystyle .dashboard .sidebar .sidebar-pages .nav {
+  height: 100vh;
+}
+.mystyle .dashboard .sidebar .sidebar-pages .nav p {
+  display: none;
+}
+.mystyle .dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link {
+  width: 60px;
+  margin-top: 12px;
+}
+.mystyle .dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link span {
+  display: none;
+}
+.mystyle .dashboard .sidebar .sidebar-pages .nav .nav-item .nav-link .home {
+  height: 20px;
+  margin-top: -15px;
+  width: 28px;
+  padding: 0px;
+}
+.mystyle .dashboard .header1 {
+  padding-left: 0px;
+  transition: all 0.3s linear;
+}
+.mystyle .dashboard .header1 .section .container {
+  margin: 0px;
+  max-width: 1961px;
+}
+.mystyle .dashboard .header1 .section .container .main-content {
+  padding-left: 88px;
+  transition: all 0.3s linear;
+}
+.mystyle .dashboard .header1 .section .container .row .col-md-8 {
+  margin-left: -12px;
+  padding: 12px;
+}
+.mystyle .dashboard .header1 .section .container .row_first .weekly {
+  width: 393px;
+}
+.mystyle .dashboard .header1 .section .container .row_first .total {
+  width: 432px;
+}
+.mystyle .dashboard .header1 .section .container .row_first .row .profit {
+  width: 158px;
+}
+.mystyle .dashboard .header1 .section .container .row_second .count {
+  width: 393px;
+}
+.mystyle .dashboard .one .container {
+  margin: 0px;
+  max-width: 1961px;
+}
+.mystyle .dashboard .one .container .two {
+  justify-content: space-between;
+  position: relative;
+}
+.mystyle .dashboard .one .container .two .navbar-toggler {
+  margin-left: 18px;
+}
+.mystyle .dashboard .one .container .two .header_second {
+  margin-right: 48px;
+}
+.mystyle .dashboard .one .container .two .header_second button {
+  margin-right: -30px;
+}
+
+@media (max-width: 1200px) {
+  .dashboard .header1 {
+    margin-left: 0px;
+  }
+  .dashboard .header1 .one .container {
+    max-width: 100%;
+  }
+  .dashboard .header1 .section .container {
+    max-width: 100%;
+  }
+  .dashboard .header1 .section .container .row .col-xl-8 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .dashboard .header1 .section .container .row_first .weekly {
+    width: 100%;
+  }
+  .dashboard .header1 .section .container .row_first .weekly .image1 img {
+    height: 294px;
+  }
+  .dashboard .header1 .section .container .row_first .weekly .yours {
+    justify-content: flex-start;
+  }
+  .dashboard .header1 .section .container .row_first .weekly .yours p br {
+    display: none;
+    padding-left: 27px;
+  }
+  .dashboard .header1 .section .container .row_first .total {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: -1px;
+  }
+  .dashboard .header1 .section .container .row_first .formar {
+    margin-top: 10px;
+    margin-left: -10px;
+  }
+  .dashboard .header1 .section .container .row_first .formar .profit {
+    width: 100%;
+  }
+  .dashboard .header1 .section .container .row_first .formar .profit h1 {
+    font-size: 24px;
+  }
+  .dashboard .header1 .section .container .row_first .formar .profit h2 {
+    font-size: 22px;
+  }
+  .dashboard .header1 .section .container .row_first .formar .profit p {
+    font-size: 20px;
+  }
+  .dashboard .header1 .section .container .row_second .count {
+    width: 100%;
+  }
+  .dashboard .header1 .section .container .row_second .row {
+    margin-left: 2px;
+  }
+}
+@media (max-width: 768px) {
+  .dashboard .header1 .section .container .row .growth .growth_icon {
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+  }
+  .dashboard .header1 .section .container .row_second .withdraw::before {
+    display: none;
+  }
+}
+@media (max-width: 550px) {
+  .dashboard .header1 .section .container .row .growth .growth_icon {
+    flex-direction: column;
+    align-items: self-start;
+  }
+}/*# sourceMappingURL=dashboard.css.map */

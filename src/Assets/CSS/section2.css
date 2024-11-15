@@ -1,0 +1,244 @@
+:root {
+   
+    --white:white;
+    --background-color: #f4f5fa;
+    --header_bg:#9155fd;
+    --icon:#8358ff;
+    --black:rgb(0, 0, 0);
+    --blue:#0d102d;
+    --grey:rgb(143, 140, 140);
+    --green:#12902a;
+    --light_bg:#e5f2fa;
+    --grey:grey;
+    --c_li:#010129;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+.section2{
+    background-color: var(--blue);
+    padding-top: 20px;
+}
+.section2 h1{
+    color:var(--white);
+    font-size: 30px;
+    font-weight:bold;
+
+}
+.section2 .container{
+    max-width: 1237px;
+    padding-bottom: 100px;
+}
+.section2 .fire_icon{
+    color:orange;
+    height: 70px;
+}
+.section2 .container .img_background {
+    background: #131740;
+    width: 267px;
+    border-radius: 15px;
+}
+.section2 .container .img_background img{
+    height: 233px;
+    width: 223px;
+    border-radius: 15px;
+    margin: 28px 21px;
+    cursor: pointer;
+    
+}
+.section2 .container .img_background .outside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.section2 .container .img_background .outside h1{
+    font-size: 16px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.section2 .container .img_background .outside .icon_para{
+    display: flex;
+    border: 2px solid #363a5d;
+    padding: 0px;
+    height: 29px;
+    padding: 4px;
+    border-radius: 6px;
+    margin-top: -10px;
+    position: relative;
+}
+.section2 .container .img_background .outside .toolti{
+    color: var(--white);
+    position: relative;
+    top: -35px;
+    left: 43px;
+    background-color: var(--black);
+    border-radius: 7px;
+    font-size: 14px;
+    width: 40px;
+    padding: 2px;
+    padding-left: 7px;
+    display: none;  
+}
+
+.section2 .container .img_background .outside .icon_para .diamond:hover .toolti{
+    display: block;
+}
+.section2 .container .img_background .outside .icon_para p{
+    color: var(--green);
+    font-size: 13px;
+}
+.section2 .container .img_background .outside .icon_para .diamond{
+    color: var(--white);
+    height: 18px;
+    margin-top: 1px;
+    cursor: pointer;
+    
+}
+
+.section2 .container .img_background .current{
+    color: var(--grey);
+    font-size: 13px;
+    padding-left: 27px;
+    margin-top: 10px;
+}
+.section2 .container .img_background .current span{
+    color: var(--white);
+}
+.section2 .container .img_background .place{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section2 .container .img_background .place .place1{
+    cursor: pointer;
+    color: var(--icon);
+    margin-left: -18px;
+    margin-top: 10px;
+}
+.section2 .container .img_background .place .like{
+    display: flex;
+    color: var(--white);
+    
+}
+.section2 .container .img_background .place .like .favourite{
+    height: 15px;
+    cursor: pointer;
+    /* margin-top: 4px; */
+    transition: all .3s linear;
+
+}
+.section2 .container .img_background .place .like .favourite:hover{
+    color: red;
+}
+.section2 .container .img_background .place .like h4{
+    font-size: 15px;
+    /* margin-top: 4px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+@media screen and (max-width: 1200px) {
+    .section2 .container {
+        padding-left: 58px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .section2 .container .img_background{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .section2 .container {
+        padding-left: 118px;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .section2 .container {
+        padding-left: 0px;
+    }}
+@media screen and (max-width: 576px) {
+    .section2 .container {
+        padding-left: 2px;
+    }
+    
+    }
+
+
+
+
+    @media screen and (max-width: 388px) {
+        .section2 .container {
+            padding-left: 12px;
+        }
+    
+    }
+
+
+    @media screen and (max-width: 315px) {
+        .section2 .container {
+            padding-left: 10px;
+        }
+    }
+
+
+    @media screen and (max-width: 410px) {
+    
+        /* .section2 .container {
+            padding-left: 78px;
+        } */
+    
+    }
+
+
+.back_bg .section2{
+        background-color: var(--white);
+}
+.back_bg .section2 h1{
+    color: var(--c_li);
+}
+
+.back_bg .section2 .container .img_background {
+    background-color: var(--white);
+    border:1px solid rgb(226 221 221);
+    width: 266px;
+}
+.back_bg .section2 .container .img_background .current span {
+    color: var(--black);
+}
+.back_bg .section2 .container .img_background .outside .icon_para .diamond{
+    color:var(--black);
+}
+.back_bg .section2 .container .img_background .place .like{
+    color: var(--grey);
+}
+
+
+/* @media screen and (max-width: 336px) {
+    .section2 .container {
+        padding-left: 16px;
+    }
+
+} */

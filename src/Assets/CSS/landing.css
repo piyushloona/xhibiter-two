@@ -1,0 +1,12 @@
+:root {
+--light_bg:#e5f2fa;
+--grey:grey;
+--c_li:#010129;
+
+}
+.landing{
+    background-color: #0d102d;
+}
+.back_bg .landing{
+    background-color: var(--light_bg);
+}

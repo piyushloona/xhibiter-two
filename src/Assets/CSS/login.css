@@ -1,0 +1,245 @@
+:root {
+   
+    --white:white;
+    --background-color: #f4f5fa;
+    --purple:#9155fd;
+    --purple1:#7a47d8;
+  }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Inter,sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+
+}
+.login{
+    background: var(--background-color);
+    height: 100vh;
+    display: flex;
+    position: relative;
+    }
+ 
+
+.login .form{
+    background-color: white;
+    padding: 23px;
+    border-radius: 10px;
+    width: 400px;
+    margin:auto;
+    position: relative;
+    
+    }
+.login .form .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .form .icon .email_icon{
+    color: var(--purple);
+    height: 36px;
+    width: 63px;
+}
+
+.login .form .icon h1{
+    font-size: 23px;
+    color: rgba(58, 53, 65, 0.87);
+    margin-left: -3px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+.login .form h2{
+    font-size: 23px;
+    margin-top: 30px;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+    color: rgba(58, 53, 65, 0.87);
+ 
+}
+.login .form p{
+    color: grey;
+    font-size: 15px;
+    
+}
+
+.login .form .email{
+    height: 54px;
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding: 10px;
+    color: grey;
+    
+}
+.login .form #email:focus{
+    border: 2px solid var(--purple);
+    outline: none;
+    box-shadow: none;
+
+}
+.login .form #pass:focus{
+    border: 2px solid var(--purple);
+    outline: none;
+    box-shadow: none;
+}
+.login .form .password{
+    height: 54px;
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid grey;
+    font-size: 18px;
+    padding: 10px;
+    color: grey;
+    margin-top: 15px    ;
+}
+.login .form .forgot{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 8px;
+}
+.login .form .forgot .remember{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login .form .forgot .remember h3{
+    font-size: 15px;
+    color:grey;
+}
+.login .form .forgot .remember .check{
+    width: 24px;
+    height: 16px;
+    border: 1px solid black;
+    margin-top: -7px;
+    cursor: pointer;
+}
+.login .form .forgot h3{
+    color:var(--purple);
+    font-size: 15px;
+    cursor: pointer;
+}
+.login .form .login_button{
+    width: 100%;
+    height: 52px;
+    border-radius: 5px;
+    font-weight: 600;
+    background-color: var(--purple);
+    border: none;
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-top: 21px;
+    transition: all .5s linear;
+}
+.login .form .login_button a{ 
+    color:white;
+}
+.login .form .login_button:hover{
+    background-color: var(--purple1);
+}
+.login .form .sign_up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 27px;
+}
+.login .form .sign_up .new{
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+}
+.login .form .sign_up h4{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-top: -8px;
+
+} 
+
+.login .form .sign_up h4 a{
+    color: var(--purple);
+    text-decoration: none;
+}
+.login .row .left_image{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* bottom:-39px; */
+}
+
+.login .row .right_image{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -27px;
+}
+
+.login .form .label_pass{
+    color:var(--purple);
+}
+
+
+.login .form .label_email{
+    color:var(--purple);
+}
+ 
+ .login .left_pic{
+    position: relative;
+ }
+ .login .left_pic img{
+    position: absolute;
+    bottom: 0px;
+ }
+ .login .right_pic{
+    position: relative;
+ }
+ .login .right_pic img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px
+ }
+/* responsive design */
+@media only screen and (max-width: 890px) {
+    .login .left_pic{
+        display: none;
+    }
+     .login .right_pic{
+        display: none;
+    }
+}
+/* @media only screen and (max-width: 992px) {
+    .login .row #column_first{
+        display: none;
+    }
+    .login .row #column_third{
+        display: none;
+    }
+    .login .row #column_second{
+        display: flex;
+        justify-content: center;        
+    }
+    .login .row {
+         height: 702px;
+     }
+} */
+
+
+.login .form .back_button{
+    color: var(--purple);
+    transition: all 0.5s linear;
+    height: 30px;
+    width: 30px;
+}
+.login .form .back_button:hover{
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 20px;
+    padding: 3px;
+
+}
